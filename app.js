@@ -171,4 +171,143 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /* ==========================================================================
+     6. THANK YOU PAGE: COPY EMAIL TO CLIPBOARD & TOAST
+     ========================================================================== */
+  const copyEmailBtn = document.getElementById('copyEmailBtn');
+  const supportEmail = document.getElementById('supportEmail');
+  const copyBtnText = document.getElementById('copyBtnText');
+  const toastNotification = document.getElementById('toastNotification');
+
+  if (copyEmailBtn && supportEmail) {
+    copyEmailBtn.addEventListener('click', () => {
+      const emailText = supportEmail.textContent.trim();
+
+      navigator.clipboard.writeText(emailText).then(() => {
+        // Button Feedback
+        copyEmailBtn.classList.add('copied');
+        if (copyBtnText) copyBtnText.textContent = 'Copiado! ✅';
+
+        // Toast Feedback
+        if (toastNotification) {
+          toastNotification.classList.add('show');
+          setTimeout(() => {
+            toastNotification.classList.remove('show');
+          }, 3000);
+        }
+
+        // Reset button after 3 seconds
+        setTimeout(() => {
+          copyEmailBtn.classList.remove('copied');
+          if (copyBtnText) copyBtnText.textContent = 'Copiar E-mail';
+        }, 3000);
+      }).catch(err => {
+        console.error('Falha ao copiar e-mail:', err);
+      });
+    });
+  }
+
+  /* ==========================================================================
+     7. UPSELL PAGE: COUNTDOWN TIMER (10 MINUTES)
+     ========================================================================== */
+  const countdownElement = document.getElementById('upsell-countdown');
+  if (countdownElement) {
+    let totalSeconds = 10 * 60; // 10 minutes
+
+    const updateTimer = () => {
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+      const formattedMin = String(minutes).padStart(2, '0');
+      const formattedSec = String(seconds).padStart(2, '0');
+      countdownElement.textContent = `${formattedMin}:${formattedSec}`;
+
+      if (totalSeconds > 0) {
+        totalSeconds--;
+      } else {
+        clearInterval(timerInterval);
+        countdownElement.textContent = "00:00";
+      }
+    };
+
+    updateTimer();
+    const timerInterval = setInterval(updateTimer, 1000);
+  }
+
+  /* ==========================================================================
+     8. DOWNSELL PAGE: COUNTDOWN TIMER (5 MINUTES)
+     ========================================================================== */
+  const downsellCountdownElement = document.getElementById('downsell-countdown');
+  if (downsellCountdownElement) {
+    let downsellTotalSeconds = 5 * 60; // 5 minutes
+
+    const updateDownsellTimer = () => {
+      const minutes = Math.floor(downsellTotalSeconds / 60);
+      const seconds = downsellTotalSeconds % 60;
+      const formattedMin = String(minutes).padStart(2, '0');
+      const formattedSec = String(seconds).padStart(2, '0');
+      downsellCountdownElement.textContent = `${formattedMin}:${formattedSec}`;
+
+      if (downsellTotalSeconds > 0) {
+        downsellTotalSeconds--;
+      } else {
+        clearInterval(downsellTimerInterval);
+        downsellCountdownElement.textContent = "00:00";
+      }
+    };
+
+    updateDownsellTimer();
+    const downsellTimerInterval = setInterval(updateDownsellTimer, 1000);
+  }
+
+  /* Footer dynamic year update */
+  const yearCopy = document.getElementById('year-copy');
+  if (yearCopy) {
+    yearCopy.textContent = new Date().getFullYear();
+  }
+
+  /* ==========================================================================
+     9. UPGRADE INTERCEPT MODAL (Pop-up ao Clicar na Opção Básica R$ 9,90)
+     ========================================================================== */
+  const basicPlanBtn = document.getElementById('basicPlanBtn');
+  const upgradeModal = document.getElementById('upgradeModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  if (basicPlanBtn && upgradeModal) {
+    // Interceptar clique no botão R$ 9,90
+    basicPlanBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      upgradeModal.classList.add('active');
+      upgradeModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    });
+
+    const hideModal = () => {
+      upgradeModal.classList.remove('active');
+      upgradeModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    // Botão X de fechar
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', hideModal);
+    }
+
+    // Clicar fora do modal card (backdrop overlay)
+    upgradeModal.addEventListener('click', (e) => {
+      if (e.target === upgradeModal) {
+        hideModal();
+      }
+    });
+
+    // Tecla ESC fecha modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && upgradeModal.classList.contains('active')) {
+        hideModal();
+      }
+    });
+  }
+
 });
+
+
+
