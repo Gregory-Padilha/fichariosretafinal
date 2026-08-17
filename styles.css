@@ -230,6 +230,40 @@ body {
 }
 
 /* ==========================================================================
+   HERO MOCKUP IMAGE (Sombra moderna, bordas refinadas e feito flutuante)
+   ========================================================================== */
+.hero-mockup-wrapper {
+  width: 100%;
+  max-width: 840px;
+  margin: 24px auto 36px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hero-mockup-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 
+    0 25px 55px -12px rgba(15, 23, 42, 0.22),
+    0 12px 28px -8px rgba(16, 185, 129, 0.16),
+    0 0 0 1px rgba(226, 232, 240, 0.9);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-mockup-img:hover {
+  transform: translateY(-6px) scale(1.008);
+  box-shadow: 
+    0 35px 70px -15px rgba(15, 23, 42, 0.28),
+    0 18px 36px -10px rgba(16, 185, 129, 0.25),
+    0 0 0 1px rgba(16, 185, 129, 0.35);
+}
+
+/* ==========================================================================
    HERO WISTIA VSL VIDEO PLAYER (VERTICAL 9:16 EMBED)
    ========================================================================== */
 .hero-video-wrapper {
