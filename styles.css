@@ -974,15 +974,15 @@ video::-webkit-media-controls-enclosure {
 }
 
 .hero-marquee-container .marquee-card {
-  width: 340px;
+  width: 400px;
   border-radius: 14px;
-  box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.15), 0 0 0 1px rgba(226, 232, 240, 0.8);
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.25);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-marquee-container .marquee-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.22), 0 0 0 1.5px rgba(16, 185, 129, 0.4);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 50px -12px rgba(15, 23, 42, 0.35);
 }
 
 .hero-marquee-container .marquee-card img {
@@ -994,7 +994,7 @@ video::-webkit-media-controls-enclosure {
 
 @media (max-width: 768px) {
   .hero-marquee-container .marquee-card {
-    width: 270px;
+    width: 310px;
   }
 }
 
