@@ -2940,6 +2940,28 @@ video::-webkit-media-controls-enclosure {
   margin-bottom: 0;
 }
 
+.main-product-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.main-product-list li {
+  font-size: 1rem;
+  color: var(--navy-dark);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.main-product-list li strong {
+  color: var(--navy-dark);
+}
+
 /* ==========================================================================
    BONUS STACK SECTION (EFEITO UAU - 3 BÔNUS DESTACADOS)
    ========================================================================== */
@@ -3004,6 +3026,28 @@ video::-webkit-media-controls-enclosure {
   font-size: 0.95rem;
   color: #92400E;
   line-height: 1.55;
+}
+
+.bonus-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bonus-card-list li {
+  font-size: 0.95rem;
+  color: #78350F;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bonus-card-list li strong {
+  color: #451A03;
 }
 
 @media (min-width: 769px) {
