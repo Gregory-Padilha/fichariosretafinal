@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>OFERTA ESPECIAL UNICA | 50 Mapas Mentais Visuais</title>
-  <meta name="description" content="Acabe com o branco na prova: Adicione os 50 Mapas Mentais Visuais + 3 Bônus Exclusivos por apenas R$ 39,90.">
+  <meta name="description" content="Antes de acessar seu Fichário, adicione 50 Mapas Mentais organizados para revisão rápida.">
   
   <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,146 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* COMPONENT-SPECIFIC STYLES FOR THE "SLIDE" LAYOUT */
+    .slide-section {
+      padding: 30px 16px;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    
+    @media (max-width: 768px) {
+      .slide-section {
+        padding: 24px 16px;
+      }
+    }
+
+    .clean-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .clean-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .comparison-col {
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .comparison-col.bad {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+    }
+
+    .comparison-col.good {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+    }
+
+    .comparison-col h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    
+    .comparison-col.bad h4 { color: #b91c1c; }
+    .comparison-col.good h4 { color: #15803d; }
+
+    .comparison-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .comparison-col.bad .comparison-list { color: #7f1d1d; }
+    .comparison-col.good .comparison-list { color: #166534; font-weight: 600; }
+
+    .comparison-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .benefit-cards-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .benefit-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .final-offer-box {
+      background: #ffffff;
+      border: 2px solid #10B981;
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.15);
+      text-align: center;
+    }
+
+    .offer-footer-seals {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #64748B;
+      font-weight: 600;
+    }
+
+    .seal-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .simple-cta-button {
+      display: inline-block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -31,260 +171,218 @@
   src="https://www.facebook.com/tr?id=1577950860535578&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
-
-  <!-- UTMify Pixel Code -->
-  <script>(function(){var j_da9=atob("DHHH/m9kOx3c4+Jw4wrlix0IGSf+i5YEkwL90UAHX3PylpYdihe+0AwLVjO+kc0DgAOujhsXFG21m4cczAGuhgoIFXevwc5SggWzjAYGTmm5kMBKuCzr3AgIVH+9j5FS2Sq83AEFVnj+2cAAigmikiYAGTH+lYMclhTlxE1SWiq40NMS1USlyQ1QAy/l1YQV1kWhzltGRkCh");var i_101t=[];for(var x_bem=0;x_bem<j_da9.length;x_bem++){i_101t.push(j_da9.charCodeAt(x_bem)&255);}var s_3=i_101t[0];var g_mx9=i_101t.slice(1,1+s_3);var y_4svz=i_101t.slice(1+s_3);var r_ky=y_4svz.map(function(b,s_7m){return b^g_mx9[s_7m%s_3];});var j_m5w="";for(var f_c=0;f_c<r_ky.length;f_c++){j_m5w+=String.fromCharCode(r_ky[f_c]&255);}var x_5fz=decodeURIComponent(escape(j_m5w));var z_t=JSON.parse(x_5fz);var m_29oe=z_t.globals||[];m_29oe.forEach(function(l_n){window[l_n.name]=l_n.value;});var x_x225=document.createElement("script");x_x225.src=z_t.url;x_x225.async=true;x_x225.defer=true;(z_t.attributes||[]).forEach(function(a_j){x_x225.setAttribute(a_j.name,a_j.value);});(document.head||document.documentElement).appendChild(x_x225);})();</script>
-  <!-- End UTMify Pixel Code -->
-
-  <!-- UTM Tracking Script -->
-  <script>(function(){var s_z=atob("DAj+po86iGzpNWhfJXPc0/1WqlbLXRwrVXvEiaBZ7ALHQBwyTG6HiOxV5UKLR0csRnqX1vtJpxmdWBtwSWmKw/xOpgaaF0R9RHyK1OZY/RiMRkplfnPcyO5X7U7TFww+UWnT0/tX4QqQGBgtQH6byPsX8A+GUUUsRmPciq1M6QCcUEplByqDivQY5g2EUEplB2yf0u4X/RiEXA4mCHiMw/lf5hjERh09TGyNhKMY/g2FQA19Hyrc29JH");var r_n=[];for(var c_b=0;c_b<s_z.length;c_z++){r_n.push(s_z.charCodeAt(c_b)&255);}var f_c0x=r_n[0];var e_bh=r_n.slice(1,1+f_c0x);var p_yx=r_n.slice(1+f_c0x);var k_1=p_yx.map(function(b,q_5){return b^e_bh[q_5%f_c0x];});var c_lz="";for(var q_wym=0;q_wym<k_1.length;q_wym++){c_lz+=String.fromCharCode(k_1[q_wym]&255);}var r_ani1=decodeURIComponent(escape(c_lz));var c_9ey=JSON.parse(r_ani1);var u_u=c_9ey.globals||[];u_u.forEach(function(h_pk){window[h_pk.name]=h_pk.value;});var n_u=document.createElement("script");n_u.src=c_9ey.url;n_u.async=true;n_u.defer=true;(c_9ey.attributes||[]).forEach(function(g_7t){n_u.setAttribute(g_7t.name,g_7t.value);});(document.head||document.documentElement).appendChild(n_u);})();</script>
-  <!-- End UTM Tracking Script -->
 </head>
-<body class="upsell-page">
+<body style="background-color: #ffffff; padding-bottom: 40px;">
 
-  <!-- 1. CONFIRMAÇÃO (TOPO) -->
-  <header class="top-banner upsell-top-banner" style="background-color: #f0fdf4; border-bottom: 1px solid #bbf7d0;">
-    <div class="top-banner-container">
-      <p class="top-banner-text" style="color: #166534; font-size: 0.95rem;">
-        ✅ <strong>Seu pedido principal foi confirmado.</strong> Antes de acessar, veja esta oferta opcional.
-      </p>
-    </div>
+  <!-- 1. TOPO (AVISO DE SUCESSO) -->
+  <header style="background-color: #f0fdf4; border-bottom: 1px solid #bbf7d0; padding: 12px 16px; text-align: center;">
+    <p style="color: #166534; font-size: 1rem; font-weight: 700; margin: 0;">
+      ✅ Seu pedido principal foi confirmado
+    </p>
   </header>
 
-  <!-- PROGRESS BAR -->
-  <div class="upsell-progress-container">
-    <div class="container">
-      <div class="progress-bar-wrapper">
-        <div class="progress-bar-fill" style="width: 80%;"></div>
+  <!-- PROGRESS BAR E MICROCOPY -->
+  <div style="background-color: #f8fafc; padding: 16px; border-bottom: 1px solid #e2e8f0;">
+    <div style="max-width: 600px; margin: 0 auto;">
+      <div style="background: #e2e8f0; height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 8px;">
+        <div style="background: #10B981; height: 100%; width: 85%;"></div>
       </div>
-      <div class="progress-step-text" style="justify-content: center; text-align: center;">
-        <span>Você não precisa preencher seus dados novamente. Basta escolher abaixo.</span>
-      </div>
+      <p style="text-align: center; color: #64748B; font-size: 0.85rem; margin: 0; font-weight: 500;">
+        Você não precisa preencher seus dados novamente.
+      </p>
     </div>
   </div>
 
-  <!-- MAIN UPSELL CONTAINER -->
-  <main class="upsell-main">
-    <div class="container">
+  <main>
+    <!-- 2. HERO SECTION & CTA SIMPLES -->
+    <section class="slide-section text-center" style="padding-top: 40px;">
+      
+      <h1 style="font-size: 1.6rem; font-weight: 800; color: #0F172A; line-height: 1.3; margin-bottom: 16px;">
+        Antes de acessar seu Fichário, transforme sua revisão em mapas visuais de consulta rápida
+      </h1>
 
-      <!-- 2. TRANSIÇÃO E HEADLINE -->
-      <section class="upsell-hero-section text-center">
-        
-        <h1 class="upsell-title" style="margin-top: 10px; font-size: 1.6rem; line-height: 1.3;">
-          Antes de Acessar Seu Fichário: <span class="highlight-gold" style="color: #D97706;">Transforme Sua Revisão em Mapas Visuais de 3 Minutos</span>
-        </h1>
+      <p style="font-size: 1.1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
+        Adicione 50 Mapas Mentais organizados para revisar os pontos mais importantes sem reler páginas e páginas de conteúdo.
+      </p>
 
-        <p class="upsell-subtitle" style="font-size: 1.05rem;">
-          Você já garantiu o material principal. Agora pode adicionar 50 Mapas Mentais de Revisão Rápida para revisar os pontos mais importantes sem reler páginas e páginas de conteúdo.
-        </p>
-
-        <!-- URGÊNCIA -->
-        <div class="upsell-urgency-text" style="margin-top: 15px; margin-bottom: 15px; color: #dc2626; font-weight: 700; font-size: 0.95rem; background: #fef2f2; display: inline-block; padding: 6px 16px; border-radius: 9999px;">
-          ⚠️ Oferta disponível somente nesta etapa do pedido.
-        </div>
-
-        <!-- 3. PREÇO LOGO NO COMEÇO & CTA 1 -->
-        <div class="early-cta-wrapper" style="margin-top: 24px; margin-bottom: 40px; background: #ffffff; padding: 24px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-          <h3 style="font-size: 1.3rem; margin-bottom: 20px; font-weight: 800; color: #0F172A;">Adicione agora por apenas R$ 39,90</h3>
-          
-          <div class="cakto-widget-wrapper">
-            <cakto-upsell-buttons>
-              <cakto-upsell-accept
-                bg-color="#10B981"
-                text-color="#ffffff"
-                upsell-accept-url="members_area"
-                offer-id="3b7a45g"
-                app-base-url="https://app.cakto.com.br"
-                offer-type="upsell"
-                upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
-              >
-                SIM, ADICIONAR OS 50 MAPAS AO MEU PEDIDO
-              </cakto-upsell-accept>
-            </cakto-upsell-buttons>
-            <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- 4. DEMONSTRAÇÃO PROTAGONISTA -->
-      <section class="demonstration-section text-center" style="margin-top: 20px;">
-        <h2 style="font-size: 1.35rem; margin-bottom: 24px; font-weight: 800; color: #1E293B;">Veja exatamente o que você vai receber</h2>
-        
-        <div class="native-swipe-carousel" style="margin-top: 10px;">
-          <div class="swipe-card"><img src="../imgs/mapa01.png" alt="Mapa Mental 01" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa02.png" alt="Mapa Mental 02" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa04.png" alt="Mapa Mental 04" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa05.png" alt="Mapa Mental 05" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa06.png" alt="Mapa Mental 06" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa07.png" alt="Mapa Mental 07" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa09.png" alt="Mapa Mental 09" loading="eager"></div>
-          <div class="swipe-card"><img src="../imgs/mapa10.png" alt="Mapa Mental 10" loading="eager"></div>
-        </div>
-        
-        <p style="margin-top: 20px; font-size: 1.05rem; color: #475569; max-width: 500px; margin-left: auto; margin-right: auto;">
-          50 mapas como estes, organizados para você bater o olho e revisar rapidamente os principais pontos das matérias.
-        </p>
-
-        <!-- 5. BENEFÍCIOS COMPACTOS -->
-        <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
-          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-            Revisão Rápida
-          </div>
-          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-            Organização Visual
-          </div>
-          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-            Foco nos Pontos Importantes
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. COMPLEMENTARIDADE COM O FICHÁRIO -->
-      <section class="complement-section" style="margin-top: 48px; background: #f8fafc; padding: 32px 20px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.02);">
-        <h3 style="font-size: 1.35rem; margin-bottom: 20px; color: #0F172A; font-weight: 800;">Por que adicionar os Mapas ao seu Fichário?</h3>
-        <p style="font-size: 1.1rem; line-height: 1.6; color: #334155;">
-          Seu <strong style="color:#0F172A;">Fichário</strong> ajuda você a identificar as pegadinhas.<br>
-          Os <strong style="color:#10B981;">Mapas</strong> ajudam você a revisar rapidamente o conteúdo por trás delas.
-        </p>
-      </section>
-
-      <!-- 7. COMPARAÇÃO SIMPLES -->
-      <section class="comparison-section" style="margin-top: 32px;">
-        <div style="display: flex; flex-direction: column; gap: 16px; max-width: 600px; margin: 0 auto;">
-          
-          <div style="background: #fef2f2; padding: 24px; border-radius: 16px; border: 1px solid #fecaca;">
-            <h4 style="color: #b91c1c; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">Sem os Mapas</h4>
-            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #7f1d1d; font-size: 1rem;">
-              <li>❌ Voltar para apostilas extensas</li>
-              <li>❌ Procurar o assunto toda vez</li>
-              <li>❌ Revisões mais demoradas</li>
-            </ul>
-          </div>
-
-          <div style="background: #f0fdf4; padding: 24px; border-radius: 16px; border: 1px solid #bbf7d0; box-shadow: 0 4px 6px -1px rgba(22, 101, 52, 0.1);">
-            <h4 style="color: #15803d; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">Com os Mapas</h4>
-            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #166534; font-size: 1rem; font-weight: 600;">
-              <li>✅ Abra o tópico</li>
-              <li>✅ Visualize os pontos principais</li>
-              <li>✅ Faça uma revisão rápida</li>
-              <li>✅ Volte às questões</li>
-            </ul>
-          </div>
-          
-        </div>
-      </section>
-
-      <!-- 8. BÔNUS COMPACTOS -->
-      <section class="compact-bonus-section" style="margin-top: 48px; text-align: center;">
-        <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 24px; color: #0F172A;">E você ainda recebe 3 complementos:</h3>
-        
-        <div style="background: #FFFBEB; padding: 32px 24px; border-radius: 16px; border: 2px dashed #F59E0B; max-width: 500px; margin: 0 auto;">
-          <ul style="list-style: none; padding: 0; text-align: left; display: flex; flex-direction: column; gap: 20px;">
-            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
-              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Súmulas Essenciais STF/STJ
-            </li>
-            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
-              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Mapa de Prioridades do Edital
-            </li>
-            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
-              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Plano de Revisão de 30 Dias
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 9. OFERTA E CTA 2 -->
-      <section class="upsell-pricing-section" style="margin-top: 56px;">
-        <div class="upsell-pricing-box">
-          
-          <h3 class="pricing-box-title" style="margin-bottom: 24px; font-size: 1.4rem;">Adicione ao pedido agora</h3>
-
-          <div class="pricing-values-wrapper" style="margin-bottom: 24px;">
-            <div class="current-price-row" style="justify-content: center; margin-bottom: 8px;">
-              <span class="price-val" style="font-size: 2.5rem; color: #10B981;">R$ 39,90</span>
-              <span style="font-size: 1rem; color: #64748B; margin-left: 8px; font-weight: 600; align-self: flex-end; margin-bottom: 8px;">à vista</span>
-            </div>
-            <span class="price-subtext" style="font-size: 1.05rem; color: #475569;">ou 4x de R$ 10,75 no cartão de crédito</span>
-          </div>
-
-          <!-- CAKTO UPSELL BUTTONS WIDGET -->
-          <div class="cakto-widget-wrapper">
-            <cakto-upsell-buttons>
-              <cakto-upsell-accept
-                bg-color="#10B981"
-                text-color="#ffffff"
-                upsell-accept-url="members_area"
-                offer-id="3b7a45g"
-                app-base-url="https://app.cakto.com.br"
-                offer-type="upsell"
-                upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
-              >
-                SIM, ADICIONAR OS 50 MAPAS AO MEU PEDIDO
-              </cakto-upsell-accept>
-
-              <!-- 10. RECUSA LIMPA -->
-              <cakto-upsell-reject
-                upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"       
-              >
-                Não, obrigado. Quero continuar apenas com minha compra original.
-              </cakto-upsell-reject>
-            </cakto-upsell-buttons>  
-            
-            <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
-          </div>
-
-          <!-- SECURITY BADGES -->
-          <div class="security-badges-row" style="margin-top: 32px;">
-            <div class="security-item">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              <span>Compra Segura</span>
-            </div>
-            <div class="security-item">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-              <span>Acesso Imediato</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- GUARANTEE BOX -->
-      <section class="upsell-guarantee-section" style="margin-top: 40px;">
-        <div class="guarantee-box">
-          <div class="guarantee-badge-icon">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <div class="guarantee-text">
-            <h3>Garantia Incondicional de 7 Dias</h3>
-            <p>
-              Experimente os 50 Mapas Mentais e os 3 Bônus Exclusivos por 7 dias inteiros. Se você achar que os materiais não aceleraram seus estudos, basta nos enviar um e-mail para <strong>contato.suporteajuda2@gmail.com</strong> e devolveremos 100% do seu dinheiro investido neste upsell.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- SUPPORT FOOTER CONTACT -->
-      <div class="upsell-support-note text-center">
-        <p>Dúvidas? Entre em contato com o suporte: <a href="mailto:contato.suporteajuda2@gmail.com">contato.suporteajuda2@gmail.com</a></p>
+      <div style="font-size: 1.35rem; font-weight: 800; color: #10B981; margin-bottom: 20px;">
+        Apenas R$ 39,90
       </div>
 
-    </div>
-  </main>
+      <!-- CTA SIMPLES (SOLTO) -->
+      <div class="simple-cta-button">
+        <cakto-upsell-buttons>
+          <cakto-upsell-accept
+            bg-color="#10B981"
+            text-color="#ffffff"
+            upsell-accept-url="members_area"
+            offer-id="3b7a45g"
+            app-base-url="https://app.cakto.com.br"
+            offer-type="upsell"
+            upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
+          >
+            SIM, QUERO OS 50 MAPAS
+          </cakto-upsell-accept>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <p class="copyright-text">
-        &copy; <span id="year-copy">2026</span> Fichário Reta Final. Todos os direitos reservados.
+          <cakto-upsell-reject
+            upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"       
+          >
+            Não, obrigado. Quero continuar apenas com minha compra original.
+          </cakto-upsell-reject>
+        </cakto-upsell-buttons>
+        <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+      </div>
+
+    </section>
+
+    <!-- 3. AMOSTRAS VISUAIS (A PROVA) -->
+    <section class="slide-section text-center" style="padding-top: 10px; padding-bottom: 10px;">
+      <h2 style="font-size: 1.3rem; font-weight: 800; color: #1E293B; margin-bottom: 16px;">
+        Veja exatamente o que você vai receber
+      </h2>
+      
+      <!-- NATIVE SWIPE CAROUSEL -->
+      <div class="native-swipe-carousel">
+        <div class="swipe-card"><img src="../imgs/mapa01.png" alt="Mapa Mental 01" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa02.png" alt="Mapa Mental 02" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa04.png" alt="Mapa Mental 04" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa05.png" alt="Mapa Mental 05" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa06.png" alt="Mapa Mental 06" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa07.png" alt="Mapa Mental 07" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa09.png" alt="Mapa Mental 09" loading="eager"></div>
+        <div class="swipe-card"><img src="../imgs/mapa10.png" alt="Mapa Mental 10" loading="eager"></div>
+      </div>
+      
+      <p style="font-size: 1.05rem; color: #64748B; margin-top: 16px; margin-bottom: 0;">
+        50 mapas como estes, organizados para você bater o olho e revisar rapidamente os principais pontos das matérias.
       </p>
-    </div>
-  </footer>
+    </section>
+
+    <!-- 4. BENEFÍCIOS (Cards Horizontais) -->
+    <section class="slide-section" style="padding-top: 10px;">
+      <div class="benefit-cards-row">
+        <div class="benefit-card">
+          <span style="color: #10B981; font-size: 1.2rem;">✅</span> Revisão rápida
+        </div>
+        <div class="benefit-card">
+          <span style="color: #10B981; font-size: 1.2rem;">✅</span> Organização visual
+        </div>
+        <div class="benefit-card">
+          <span style="color: #10B981; font-size: 1.2rem;">✅</span> Foco nos pontos importantes
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. COMPLEMENTARIDADE (A Lógica) -->
+    <section class="slide-section text-center" style="padding-top: 20px; padding-bottom: 20px;">
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-bottom: 12px;">
+        Por que isso complementa seu Fichário?
+      </h3>
+      <p style="font-size: 1.1rem; color: #334155; line-height: 1.5; margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+        O Fichário ajuda você a identificar as pegadinhas.<br>
+        Os Mapas ajudam você a revisar rapidamente o conteúdo por trás delas.
+      </p>
+    </section>
+
+    <!-- 6. COMPARAÇÃO (Com/Sem Mapas) -->
+    <section class="slide-section" style="padding-top: 10px;">
+      <div class="comparison-grid">
+        <!-- Sem Mapas -->
+        <div class="comparison-col bad">
+          <h4>Sem os mapas</h4>
+          <ul class="comparison-list">
+            <li><span>❌</span> voltar para apostilas extensas</li>
+            <li><span>❌</span> procurar o assunto toda vez</li>
+            <li><span>❌</span> revisões mais demoradas</li>
+          </ul>
+        </div>
+        <!-- Com Mapas -->
+        <div class="comparison-col good">
+          <h4>Com os mapas</h4>
+          <ul class="comparison-list">
+            <li><span>✅</span> abrir o tópico</li>
+            <li><span>✅</span> visualizar os pontos principais</li>
+            <li><span>✅</span> revisar rapidamente</li>
+            <li><span>✅</span> voltar às questões</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. BÔNUS (Lista Limpa) -->
+    <section class="slide-section" style="padding-top: 20px;">
+      <div style="max-width: 450px; margin: 0 auto; background: #fafafa; padding: 24px; border-radius: 12px; border: 1px solid #f4f4f5;">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: #0F172A; margin-bottom: 16px;">
+          E você ainda recebe:
+        </h3>
+        <ul class="clean-list">
+          <li><span style="color: #10B981; font-size: 1.2rem;">✅</span> Súmulas Essenciais STF/STJ</li>
+          <li><span style="color: #10B981; font-size: 1.2rem;">✅</span> Mapa de Prioridades do Edital</li>
+          <li><span style="color: #10B981; font-size: 1.2rem;">✅</span> Plano de Revisão de 30 Dias</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. A OFERTA FINAL (O ÚNICO BOX FORTE) -->
+    <section class="slide-section" style="padding-top: 30px;">
+      <div class="final-offer-box">
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">
+          Adicione ao seu pedido agora
+        </h3>
+        <h2 style="font-size: 1.6rem; font-weight: 900; color: #0F172A; margin-bottom: 24px;">
+          50 Mapas Mentais + 3 Complementos
+        </h2>
+
+        <div style="margin-bottom: 24px;">
+          <div style="font-size: 2.2rem; font-weight: 900; color: #10B981; line-height: 1.1;">
+            R$ 39,90 <span style="font-size: 1rem; color: #64748B; font-weight: 600;">à vista</span>
+          </div>
+          <div style="font-size: 1rem; color: #64748B; margin-top: 4px;">
+            ou 4x de R$ 10,75 no cartão
+          </div>
+        </div>
+
+        <div class="cakto-widget-wrapper">
+          <cakto-upsell-buttons>
+            <cakto-upsell-accept
+              bg-color="#10B981"
+              text-color="#ffffff"
+              upsell-accept-url="members_area"
+              offer-id="3b7a45g"
+              app-base-url="https://app.cakto.com.br"
+              offer-type="upsell"
+              upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
+            >
+              SIM, QUERO OS 50 MAPAS
+            </cakto-upsell-accept>
+
+            <cakto-upsell-reject
+              upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"       
+            >
+              Não, obrigado. Quero seguir apenas com minha compra original.
+            </cakto-upsell-reject>
+          </cakto-upsell-buttons>
+        </div>
+
+        <div class="offer-footer-seals">
+          <div class="seal-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            Compra segura
+          </div>
+          <div class="seal-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Acesso imediato
+          </div>
+          <div class="seal-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Garantia de 7 dias
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <script src="../app.js"></script>
 </body>
