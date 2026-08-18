@@ -968,33 +968,50 @@ video::-webkit-media-controls-enclosure {
   text-transform: uppercase;
 }
 
-.hero-marquee-container {
-  margin-top: 0 !important;
-  padding: 10px 0;
+/* ==========================================================================
+   NATIVE SWIPE CAROUSEL (MOBILE-FIRST)
+   ========================================================================== */
+.native-swipe-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px 16px 40px 16px;
+  margin: 0 -16px;
+  
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.hero-marquee-container .marquee-card {
-  width: 400px;
-  border-radius: 14px;
-  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.25);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+.native-swipe-carousel::-webkit-scrollbar {
+  display: none;
 }
 
-.hero-marquee-container .marquee-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 30px 50px -12px rgba(15, 23, 42, 0.35);
+.native-swipe-carousel .swipe-card {
+  flex: 0 0 auto;
+  width: 85%;
+  max-width: 400px;
+  scroll-snap-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
 
-.hero-marquee-container .marquee-card img {
+.native-swipe-carousel .swipe-card img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 14px;
+  border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-  .hero-marquee-container .marquee-card {
-    width: 310px;
+@media (min-width: 768px) {
+  .native-swipe-carousel {
+    justify-content: center;
+    margin: 0;
+  }
+  .native-swipe-carousel .swipe-card {
+    width: 380px;
   }
 }
 
