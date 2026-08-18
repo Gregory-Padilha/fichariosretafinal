@@ -2878,21 +2878,21 @@ video::-webkit-media-controls-enclosure {
 }
 
 .logic-badge {
-  background: #EFF6FF;
-  color: #1E40AF;
-  border: 1px solid #BFDBFE;
+  background: #FFEDD5;
+  color: #C2410C;
+  border: 1px solid #FED7AA;
 }
 
 .authority-badge {
-  background: #F1F5F9;
-  color: #0F172A;
-  border: 1px solid #CBD5E1;
+  background: #E0F2FE;
+  color: #0369A1;
+  border: 1px solid #BAE6FD;
 }
 
 .bonus-badge {
-  background: #FEF3C7;
-  color: #92400E;
-  border: 1px solid #FCD34D;
+  background: #D1FAE5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
 }
 
 .deliverable-header {
