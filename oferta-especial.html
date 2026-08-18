@@ -42,24 +42,23 @@
 </head>
 <body class="upsell-page">
 
-  <!-- URGENCY BANNER TOPO -->
-  <header class="top-banner upsell-top-banner">
+  <!-- 1. CONFIRMAÇÃO (TOPO) -->
+  <header class="top-banner upsell-top-banner" style="background-color: #f0fdf4; border-bottom: 1px solid #bbf7d0;">
     <div class="top-banner-container">
-      <p class="top-banner-text">
-        ⚠️ <strong>ESPERE! NÃO FECHE ESTA PÁGINA AINDA.</strong> Seu pedido ainda não foi concluído!
+      <p class="top-banner-text" style="color: #166534; font-size: 0.95rem;">
+        ✅ <strong>Seu pedido principal foi confirmado.</strong> Antes de acessar, veja esta oferta opcional.
       </p>
     </div>
   </header>
 
-  <!-- PROGRESS BAR (PASSO 2 DE 3) -->
+  <!-- PROGRESS BAR -->
   <div class="upsell-progress-container">
     <div class="container">
       <div class="progress-bar-wrapper">
         <div class="progress-bar-fill" style="width: 80%;"></div>
       </div>
-      <div class="progress-step-text">
-        <span>PASSO 2 DE 3: QUASE LÁ...</span>
-        <strong class="progress-percent">80% Concluído</strong>
+      <div class="progress-step-text" style="justify-content: center; text-align: center;">
+        <span>Você não precisa preencher seus dados novamente. Basta escolher abaixo.</span>
       </div>
     </div>
   </div>
@@ -68,39 +67,55 @@
   <main class="upsell-main">
     <div class="container">
 
-      <!-- 1. HERO SECTION (MOBILE FIRST) -->
+      <!-- 2. TRANSIÇÃO E HEADLINE -->
       <section class="upsell-hero-section text-center">
         
-        <div class="upsell-badge-wrapper">
-          <span class="upsell-badge">
-            🔥 OFERTA ÚNICA DE ADIÇÃO AO PEDIDO (OTO)
-          </span>
-        </div>
-
-        <h1 class="upsell-title">
-          🛑 ESPERE! Acabe Com o 'Branco' na Prova: <span class="highlight-gold">Adicione os 50 Mapas Mentais Visuais ao Seu Pedido</span>
+        <h1 class="upsell-title" style="margin-top: 10px; font-size: 1.6rem; line-height: 1.3;">
+          Antes de Acessar Seu Fichário: <span class="highlight-gold" style="color: #D97706;">Transforme Sua Revisão em Mapas Visuais de 3 Minutos</span>
         </h1>
 
-        <p class="upsell-subtitle">
-          Você garantiu a base, mas PDFs gigantes não fixam na memória. Leve os 50 Mapas Mentais 'Anti-Branco' por apenas R$ 39,90 e revise qualquer matéria em 3 minutos. Aja agora e destrave 3 Bônus Exclusivos.
+        <p class="upsell-subtitle" style="font-size: 1.05rem;">
+          Você já garantiu o material principal. Agora pode adicionar 50 Mapas Mentais de Revisão Rápida para revisar os pontos mais importantes sem reler páginas e páginas de conteúdo.
         </p>
 
-        <!-- Dynamic Timer Badge -->
-        <div class="upsell-timer-pill">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <span>Esta oportunidade expira em: <strong id="upsell-countdown">09:59</strong></span>
+        <!-- URGÊNCIA -->
+        <div class="upsell-urgency-text" style="margin-top: 15px; margin-bottom: 15px; color: #dc2626; font-weight: 700; font-size: 0.95rem; background: #fef2f2; display: inline-block; padding: 6px 16px; border-radius: 9999px;">
+          ⚠️ Oferta disponível somente nesta etapa do pedido.
         </div>
 
-        <!-- Carrosel Infinito de Mapas Mentais no Hero -->
-        <div class="hero-marquee-wrapper text-center">
-          <span class="hero-marquee-badge">⚡ ARSENAL VISUAL: AMOSTRA DOS 50+ MAPAS MENTAIS</span>
-          <div class="marquee-container hero-marquee-container">
+        <!-- 3. PREÇO LOGO NO COMEÇO & CTA 1 -->
+        <div class="early-cta-wrapper" style="margin-top: 24px; margin-bottom: 40px; background: #ffffff; padding: 24px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 20px; font-weight: 800; color: #0F172A;">Adicione agora por apenas R$ 39,90</h3>
+          
+          <div class="cakto-widget-wrapper">
+            <cakto-upsell-buttons>
+              <cakto-upsell-accept
+                bg-color="#10B981"
+                text-color="#ffffff"
+                upsell-accept-url="members_area"
+                offer-id="3b7a45g"
+                app-base-url="https://app.cakto.com.br"
+                offer-type="upsell"
+                upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
+              >
+                SIM, ADICIONAR OS 50 MAPAS AO MEU PEDIDO
+              </cakto-upsell-accept>
+            </cakto-upsell-buttons>
+            <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 4. DEMONSTRAÇÃO PROTAGONISTA -->
+      <section class="demonstration-section text-center" style="margin-top: 20px;">
+        <h2 style="font-size: 1.35rem; margin-bottom: 24px; font-weight: 800; color: #1E293B;">Veja exatamente o que você vai receber</h2>
+        
+        <div class="hero-marquee-wrapper text-center" style="margin: 0; padding: 0;">
+          <div class="marquee-container hero-marquee-container" style="border: 2px solid #E2E8F0; border-radius: 16px; background: #F8FAFC;">
             <div class="marquee-row">
               <div class="marquee-track track-left">
-                <div class="marquee-card"><img src="imgs/mapa01.png" alt="Mapa Mental 01 - Princípios Fundamentais" loading="eager"></div>
+                <div class="marquee-card"><img src="imgs/mapa01.png" alt="Mapa Mental 01" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa02.png" alt="Mapa Mental 02" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa04.png" alt="Mapa Mental 04" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa05.png" alt="Mapa Mental 05" loading="eager"></div>
@@ -110,7 +125,7 @@
                 <div class="marquee-card"><img src="imgs/mapa10.png" alt="Mapa Mental 10" loading="eager"></div>
                 
                 <!-- Duplicata para Looping Infinito -->
-                <div class="marquee-card"><img src="imgs/mapa01.png" alt="Mapa Mental 01 - Princípios Fundamentais" loading="eager"></div>
+                <div class="marquee-card"><img src="imgs/mapa01.png" alt="Mapa Mental 01" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa02.png" alt="Mapa Mental 02" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa04.png" alt="Mapa Mental 04" loading="eager"></div>
                 <div class="marquee-card"><img src="imgs/mapa05.png" alt="Mapa Mental 05" loading="eager"></div>
@@ -122,128 +137,94 @@
             </div>
           </div>
         </div>
+        
+        <p style="margin-top: 20px; font-size: 1.05rem; color: #475569; max-width: 500px; margin-left: auto; margin-right: auto;">
+          50 mapas como estes, organizados para você bater o olho e revisar rapidamente os principais pontos das matérias.
+        </p>
+
+        <!-- 5. BENEFÍCIOS COMPACTOS -->
+        <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            Revisão Rápida
+          </div>
+          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            Organização Visual
+          </div>
+          <div style="background: #E0F2FE; color: #0284C7; font-weight: 700; padding: 10px 20px; border-radius: 99px; display: inline-flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            Foco nos Pontos Importantes
+          </div>
+        </div>
       </section>
 
-      <!-- 2. PRODUTO PRINCIPAL (CARTÃO DE DESTAQUE MÁXIMO) -->
-      <section class="main-product-section">
-        <div class="main-product-hero-card">
-          <div class="main-product-badge">
-            🧠 PRODUTO PRINCIPAL
+      <!-- 6. COMPLEMENTARIDADE COM O FICHÁRIO -->
+      <section class="complement-section" style="margin-top: 48px; background: #f8fafc; padding: 32px 20px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.02);">
+        <h3 style="font-size: 1.35rem; margin-bottom: 20px; color: #0F172A; font-weight: 800;">Por que adicionar os Mapas ao seu Fichário?</h3>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #334155;">
+          Seu <strong style="color:#0F172A;">Fichário</strong> ajuda você a identificar as pegadinhas.<br>
+          Os <strong style="color:#10B981;">Mapas</strong> ajudam você a revisar rapidamente o conteúdo por trás delas.
+        </p>
+      </section>
+
+      <!-- 7. COMPARAÇÃO SIMPLES -->
+      <section class="comparison-section" style="margin-top: 32px;">
+        <div style="display: flex; flex-direction: column; gap: 16px; max-width: 600px; margin: 0 auto;">
+          
+          <div style="background: #fef2f2; padding: 24px; border-radius: 16px; border: 1px solid #fecaca;">
+            <h4 style="color: #b91c1c; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">Sem os Mapas</h4>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #7f1d1d; font-size: 1rem;">
+              <li>❌ Voltar para apostilas extensas</li>
+              <li>❌ Procurar o assunto toda vez</li>
+              <li>❌ Revisões mais demoradas</li>
+            </ul>
           </div>
-          <h2 class="main-product-title">
-            50 Mapas Mentais "Anti-Branco" (PDF)
-          </h2>
-          <ul class="main-product-list">
-            <li>
-              <span>👁️ <strong>Bateu o olho, lembrou:</strong> Diagramação visual que força a memorização fotográfica imediata.</span>
+
+          <div style="background: #f0fdf4; padding: 24px; border-radius: 16px; border: 1px solid #bbf7d0; box-shadow: 0 4px 6px -1px rgba(22, 101, 52, 0.1);">
+            <h4 style="color: #15803d; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">Com os Mapas</h4>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #166534; font-size: 1rem; font-weight: 600;">
+              <li>✅ Abra o tópico</li>
+              <li>✅ Visualize os pontos principais</li>
+              <li>✅ Faça uma revisão rápida</li>
+              <li>✅ Volte às questões</li>
+            </ul>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- 8. BÔNUS COMPACTOS -->
+      <section class="compact-bonus-section" style="margin-top: 48px; text-align: center;">
+        <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 24px; color: #0F172A;">E você ainda recebe 3 complementos:</h3>
+        
+        <div style="background: #FFFBEB; padding: 32px 24px; border-radius: 16px; border: 2px dashed #F59E0B; max-width: 500px; margin: 0 auto;">
+          <ul style="list-style: none; padding: 0; text-align: left; display: flex; flex-direction: column; gap: 20px;">
+            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
+              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Súmulas Essenciais STF/STJ
             </li>
-            <li>
-              <span>⚡ <strong>Revisão Expressa:</strong> Revise tópicos complexos de Direito em menos de 3 minutos.</span>
+            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
+              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Mapa de Prioridades do Edital
             </li>
-            <li>
-              <span>🎯 <strong>Sem Enrolação:</strong> Traduzimos as matérias mais densas apenas com o que cai nas carreiras policiais.</span>
+            <li style="display: flex; align-items: flex-start; gap: 12px; font-weight: 700; color: #78350F; font-size: 1.05rem;">
+              <span style="font-size: 1.2rem; line-height: 1.2;">➕</span> Plano de Revisão de 30 Dias
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- 3. SEÇÃO DE BÔNUS (EFEITO UAU - EMPILHADOS NA VERTICAL) -->
-      <section class="bonus-stack-section">
-        <h2 class="bonus-stack-title text-center">
-          🎁 Aja Agora e Destrave 3 Ferramentas de Bônus
-        </h2>
-
-        <div class="bonus-stack-grid">
-
-          <!-- Cartão Bônus 1 -->
-          <div class="bonus-card-item">
-            <div class="bonus-card-badge">
-              🎁 BÔNUS 01
-            </div>
-            <h3 class="bonus-card-title">
-              Súmulas Traduzidas: STF/STJ para Leigos
-            </h3>
-            <ul class="bonus-card-list">
-              <li>
-                <span>⚖️ <strong>Fuga do Juridiquês:</strong> As 40 súmulas que mais caem, traduzidas para o português claro.</span>
-              </li>
-              <li>
-                <span>🚨 <strong>Alerta Vermelho:</strong> Descubra a palavra exata que o examinador vai trocar na questão.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Cartão Bônus 2 -->
-          <div class="bonus-card-item">
-            <div class="bonus-card-badge">
-              🎁 BÔNUS 02
-            </div>
-            <h3 class="bonus-card-title">
-              Edital Hackeado: O "Ouro" e o "Lixo"
-            </h3>
-            <ul class="bonus-card-list">
-              <li>
-                <span>📊 <strong>Mapa de Calor:</strong> Cruzamos 5.000 questões para mostrar o que mais cai.</span>
-              </li>
-              <li>
-                <span>🎯 <strong>Direcionamento:</strong> Saiba o que é "Ouro" (obrigatório estudar) e o que é "Lixo" (pule sem medo e ganhe tempo).</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Cartão Bônus 3 -->
-          <div class="bonus-card-item">
-            <div class="bonus-card-badge">
-              🎁 BÔNUS 03
-            </div>
-            <h3 class="bonus-card-title">
-              Cronograma 30 Dias "À Prova de Preguiça"
-            </h3>
-            <ul class="bonus-card-list">
-              <li>
-                <span>📅 <strong>Missão Diária:</strong> Sua rotina de 30 dias pronta. Fim da ansiedade de não saber por onde começar.</span>
-              </li>
-              <li>
-                <span>✅ <strong>Apenas Execute:</strong> Imprima, cole na parede e marque um "X" na meta do dia. Impossível falhar.</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 4. CAIXA DE CHECKOUT E BOTÃO FIXO (CTA) -->
-      <section class="upsell-pricing-section">
+      <!-- 9. OFERTA E CTA 2 -->
+      <section class="upsell-pricing-section" style="margin-top: 56px;">
         <div class="upsell-pricing-box">
           
-          <div class="pricing-badge-oto">
-            <span>OFERTA ÚNICA NESTA PÁGINA</span>
-          </div>
+          <h3 class="pricing-box-title" style="margin-bottom: 24px; font-size: 1.4rem;">Adicione ao pedido agora</h3>
 
-          <h3 class="pricing-box-title">Adicione os Mapas Mentais + 3 Bônus ao Seu Pedido</h3>
-
-          <div class="pricing-values-wrapper">
-            <span class="old-price">De R$ 147,00</span>
-            <div class="current-price-row">
-              <span class="currency">Por Apenas</span>
-              <span class="price-val">R$ 39,90</span>
+          <div class="pricing-values-wrapper" style="margin-bottom: 24px;">
+            <div class="current-price-row" style="justify-content: center; margin-bottom: 8px;">
+              <span class="price-val" style="font-size: 2.5rem; color: #10B981;">R$ 39,90</span>
+              <span style="font-size: 1rem; color: #64748B; margin-left: 8px; font-weight: 600; align-self: flex-end; margin-bottom: 8px;">à vista</span>
             </div>
-            <span class="price-subtext">ou 4x de R$ 10,75 no cartão de crédito</span>
-          </div>
-
-          <div class="upsell-benefits-mini">
-            <div class="mini-benefit-item">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Acesso imediato junto ao seu Fichário</span>
-            </div>
-            <div class="mini-benefit-item">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Download em formato PDF A4 de alta resolução</span>
-            </div>
-            <div class="mini-benefit-item">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Garantia incondicional de 7 dias</span>
-            </div>
+            <span class="price-subtext" style="font-size: 1.05rem; color: #475569;">ou 4x de R$ 10,75 no cartão de crédito</span>
           </div>
 
           <!-- CAKTO UPSELL BUTTONS WIDGET -->
@@ -258,13 +239,14 @@
                 offer-type="upsell"
                 upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"   
               >
-                SIM! QUERO ADICIONAR OS MAPAS + BÔNUS
+                SIM, ADICIONAR OS 50 MAPAS AO MEU PEDIDO
               </cakto-upsell-accept>
 
+              <!-- 10. RECUSA LIMPA -->
               <cakto-upsell-reject
                 upsell-reject-url="https://ficharioretafinal.shop/desconto-oferta-especial"       
               >
-                Não, obrigado. Prefiro ler PDFs de 200 páginas e arriscar dar 'branco' na prova.
+                Não, obrigado. Quero continuar apenas com minha compra original.
               </cakto-upsell-reject>
             </cakto-upsell-buttons>  
             
@@ -272,14 +254,14 @@
           </div>
 
           <!-- SECURITY BADGES -->
-          <div class="security-badges-row">
+          <div class="security-badges-row" style="margin-top: 32px;">
             <div class="security-item">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              <span>Compra 100% Segura</span>
+              <span>Compra Segura</span>
             </div>
             <div class="security-item">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-              <span>Liberação Instantânea</span>
+              <span>Acesso Imediato</span>
             </div>
           </div>
 
@@ -287,7 +269,7 @@
       </section>
 
       <!-- GUARANTEE BOX -->
-      <section class="upsell-guarantee-section">
+      <section class="upsell-guarantee-section" style="margin-top: 40px;">
         <div class="guarantee-box">
           <div class="guarantee-badge-icon">
             <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
@@ -297,7 +279,7 @@
           <div class="guarantee-text">
             <h3>Garantia Incondicional de 7 Dias</h3>
             <p>
-              Experimente os 50 Mapas Mentais "Anti-Branco" e os 3 Bônus Exclusivos por 7 dias inteiros. Se você achar que os materiais não aceleraram seus estudos, basta nos enviar um e-mail para <strong>contato.suporteajuda2@gmail.com</strong> e devolveremos 100% do seu dinheiro investido neste upsell. Sem perguntas e sem letras miúdas.
+              Experimente os 50 Mapas Mentais e os 3 Bônus Exclusivos por 7 dias inteiros. Se você achar que os materiais não aceleraram seus estudos, basta nos enviar um e-mail para <strong>contato.suporteajuda2@gmail.com</strong> e devolveremos 100% do seu dinheiro investido neste upsell.
             </p>
           </div>
         </div>
