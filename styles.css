@@ -11,52 +11,48 @@
    ========================================================================== */
 
 :root {
-  /* Colors - Tactical Dark Mode */
-  --bg-main: #121212;
-  --bg-alt: #1A1A1A;
-  --card-bg: #242424;
-  --border-color: #333333;
-  --border-focus: #555555;
+  /* Colors */
+  --bg-main: #F8FAFC;
+  --bg-alt: #F1F5F9;
+  --card-bg: #FFFFFF;
+  --border-color: #E2E8F0;
+  --border-focus: #CBD5E1;
   
-  --navy-dark: #000000;
-  --navy-medium: #0A0A0A;
-  --navy-light: #1C1C1C;
+  --navy-dark: #0F172A;
+  --navy-medium: #1E293B;
+  --navy-light: #334155;
 
-  /* Neon Green CTA */
-  --emerald-main: #00E676;
-  --emerald-dark: #00C853;
-  --emerald-light: #B9F6CA;
-  --emerald-glow: rgba(0, 230, 118, 0.4);
+  --emerald-main: #10B981;
+  --emerald-dark: #059669;
+  --emerald-light: #D1FAE5;
+  --emerald-glow: rgba(16, 185, 129, 0.35);
 
-  /* Tactical Yellow */
-  --gold-main: #FFC107;
-  --gold-dark: #FFA000;
-  --gold-light: #FFECB3;
+  --gold-main: #F59E0B;
+  --gold-dark: #D97706;
+  --gold-light: #FEF3C7;
 
-  /* Alert Red */
-  --red-main: #E53935;
-  --red-dark: #C62828;
-  --red-light: #FFCDD2;
+  --red-main: #EF4444;
+  --red-dark: #B91C1C;
+  --red-light: #FEE2E2;
 
-  /* Text - High Contrast */
-  --text-dark: #FFFFFF;
-  --text-muted: #E0E0E0;
-  --text-light: #B0B0B0;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
+  --text-light: #94A3B8;
 
   /* Typography */
-  --font-family: 'Montserrat', 'Roboto Condensed', sans-serif;
+  --font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  /* Shadows - Dark/Deep */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --shadow-pulse: 0 0 18px rgba(0, 230, 118, 0.5);
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.1), 0 4px 8px -2px rgba(15, 23, 42, 0.06);
+  --shadow-pulse: 0 0 18px rgba(16, 185, 129, 0.4);
 
-  /* Border Radius - Sharp/Tactical */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-pill: 6px;
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
 
   /* Transitions */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -193,7 +189,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border: 1.5px solid var(--gold-main);
   color: var(--navy-dark);
   font-size: 0.74rem;
@@ -393,7 +389,7 @@ video::-webkit-media-controls-enclosure {
   flex-direction: column;
   gap: 12px;
   margin-bottom: 24px;
-  background: var(--card-bg);
+  background: #FFFFFF;
   padding: 16px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
@@ -436,7 +432,7 @@ video::-webkit-media-controls-enclosure {
   align-items: center;
   justify-content: center;
   background-color: var(--emerald-main);
-  color: var(--navy-dark);
+  color: #FFFFFF;
   text-decoration: none;
   padding: 16px 16px;
   min-height: 56px;
@@ -544,7 +540,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .truth-callout-box {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 2px solid var(--gold-main);
   border-radius: var(--radius-md);
   padding: 20px 16px;
@@ -576,7 +572,7 @@ video::-webkit-media-controls-enclosure {
    ========================================================================== */
 .deliverable-section {
   padding: 40px 0;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -660,7 +656,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .flashcard-question-box {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-left: 4px solid var(--navy-dark);
   padding: 12px 14px;
   border-radius: var(--radius-sm);
@@ -785,7 +781,7 @@ video::-webkit-media-controls-enclosure {
   margin: 36px auto 20px;
   max-width: 680px;
   padding: 16px 20px;
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-radius: var(--radius-md);
   border: 1px dashed var(--border-color);
   box-shadow: var(--shadow-sm);
@@ -832,7 +828,7 @@ video::-webkit-media-controls-enclosure {
   font-size: 0.9rem;
   font-weight: 800;
   text-decoration: none;
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 1.5px solid var(--border-color);
   padding: 10px 22px;
   border-radius: var(--radius-pill);
@@ -897,7 +893,7 @@ video::-webkit-media-controls-enclosure {
 .marquee-card {
   width: 320px;
   flex-shrink: 0;
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-md);
@@ -1034,7 +1030,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .module-card {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   padding: 20px 16px;
@@ -1084,7 +1080,7 @@ video::-webkit-media-controls-enclosure {
    ========================================================================== */
 .target-section {
   padding: 40px 0;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border-top: 1px solid var(--border-color);
 }
 
@@ -1183,8 +1179,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 .value-card-compact {
-  background: var(--bg-main);
-  border: var(--border-focus);
+  background: #F8FAFC;
+  border: 1px dashed #CBD5E1;
   border-radius: var(--radius-md);
   padding: 14px 16px;
   display: flex;
@@ -1326,7 +1322,7 @@ video::-webkit-media-controls-enclosure {
 /* Card Básico */
 .pricing-card-basic {
   border: 1px solid var(--border-color);
-  background: var(--card-bg);
+  background: #FFFFFF;
 }
 
 .basic-badge {
@@ -1334,7 +1330,7 @@ video::-webkit-media-controls-enclosure {
   font-size: 0.725rem;
   font-weight: 700;
   color: var(--text-muted);
-  background: var(--bg-alt);
+  background: #F1F5F9;
   padding: 4px 10px;
   border-radius: var(--radius-pill);
   margin-bottom: 8px;
@@ -1448,7 +1444,7 @@ video::-webkit-media-controls-enclosure {
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
-  color: var(--text-dark);
+  color: #0F172A;
   font-size: 0.72rem;
   font-weight: 800;
   padding: 6px 16px;
@@ -1506,7 +1502,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .vip-features {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-color: #BBF7D0;
 }
 
@@ -1591,7 +1587,7 @@ video::-webkit-media-controls-enclosure {
   gap: 4px;
 }
 
-.chip-navy { background: var(--bg-alt); color: var(--text-dark); border: var(--border-focus); }
+.chip-navy { background: #F1F5F9; color: #0F172A; border: 1px solid #CBD5E1; }
 .chip-blue { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
 .chip-purple { background: #F5F3FF; color: #6D28D9; border: 1px solid #DDD6FE; }
 .chip-amber { background: #FEF3C7; color: #B45309; border: 1px solid #FDE68A; }
@@ -1660,7 +1656,7 @@ video::-webkit-media-controls-enclosure {
    ========================================================================== */
 .guarantee-section {
   padding: 40px 0;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -1734,7 +1730,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .faq-item {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -1897,7 +1893,7 @@ video::-webkit-media-controls-enclosure {
    ========================================================================== */
 .comparison-section {
   padding: 40px 0;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -1916,7 +1912,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .comp-bad {
-  background: var(--card-bg)5F5;
+  background-color: #FFF5F5;
   border-color: #FECACA;
 }
 
@@ -1973,7 +1969,7 @@ video::-webkit-media-controls-enclosure {
    ========================================================================== */
 .social-proof-section {
   padding: 50px 0;
-  background: var(--card-bg);
+  background-color: #FFFFFF;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -2062,7 +2058,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .compact-mod-card {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px 12px;
@@ -2114,7 +2110,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .authority-box {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 24px 18px;
@@ -2480,7 +2476,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .thankyou-step-card:hover {
-  border: var(--border-focus);
+  border-color: #CBD5E1;
 }
 
 .step-number-badge {
@@ -2698,7 +2694,7 @@ video::-webkit-media-controls-enclosure {
   display: inline-block;
   padding: 10px 16px;
   border-radius: var(--radius-sm);
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   transition: var(--transition-fast);
 }
@@ -2806,7 +2802,7 @@ video::-webkit-media-controls-enclosure {
 
 /* Progress Bar */
 .upsell-progress-container {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-bottom: 1px solid var(--border-color);
   padding: 12px 0;
 }
@@ -3004,7 +3000,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .bonus-card-item {
-  background: var(--card-bg)BEB;
+  background: #FFFBEB;
   border: 2px dashed #F59E0B;
   border-radius: 16px;
   padding: 24px 20px;
@@ -3204,7 +3200,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .upsell-pricing-box {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 2px solid var(--emerald-main);
   border-radius: var(--radius-lg);
   padding: 28px 18px;
@@ -3658,7 +3654,7 @@ cakto-upsell-reject::part(button):hover {
 
 /* Método P.R.M. Box */
 .prm-mechanism-box {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border: 2px solid var(--emerald-main);
   border-radius: var(--radius-lg);
   padding: 28px 20px;
@@ -3718,7 +3714,7 @@ cakto-upsell-reject::part(button):hover {
 /* Problem Unified Section */
 .problem-unified-section {
   padding: 48px 0;
-  background: var(--card-bg);
+  background: #FFFFFF;
 }
 
 .real-pain-bullets-box {
@@ -3795,7 +3791,7 @@ cakto-upsell-reject::part(button):hover {
 }
 
 .upgrade-modal-card {
-  background: var(--card-bg);
+  background: #FFFFFF;
   border-radius: 20px;
   max-width: 500px;
   width: 100%;
@@ -3816,7 +3812,7 @@ cakto-upsell-reject::part(button):hover {
   position: absolute;
   top: 14px;
   right: 18px;
-  background: var(--bg-alt);
+  background: #F1F5F9;
   border: none;
   font-size: 1.5rem;
   line-height: 1;
@@ -3859,7 +3855,7 @@ cakto-upsell-reject::part(button):hover {
 
 .modal-subheadline {
   font-size: 1.05rem;
-  color: var(--text-muted);
+  color: #334155;
   line-height: 1.4;
   margin-bottom: 18px;
 }
@@ -3882,8 +3878,8 @@ cakto-upsell-reject::part(button):hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: var(--bg-main);
-  border: var(--border-color);
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
   border-radius: 12px;
   padding: 14px 16px;
 }
@@ -3986,7 +3982,7 @@ cakto-upsell-reject::part(button):hover {
 
 .btn-modal-decline {
   font-size: 0.825rem;
-  color: var(--text-light);
+  color: #64748B;
   text-decoration: underline;
   transition: color 0.2s ease;
   padding: 4px 8px;
