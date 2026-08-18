@@ -944,6 +944,61 @@ video::-webkit-media-controls-enclosure {
 }
 
 /* ==========================================================================
+   HERO INFINITE MARQUEE CAROUSEL (MAPAS MENTAIS & MATERIAIS)
+   ========================================================================== */
+.hero-marquee-wrapper {
+  width: 100%;
+  margin: 28px 0 32px;
+  position: relative;
+}
+
+.hero-marquee-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.hero-marquee-container {
+  margin-top: 0 !important;
+  padding: 10px 0;
+}
+
+.hero-marquee-container .marquee-card {
+  width: 340px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.15), 0 0 0 1px rgba(226, 232, 240, 0.8);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-marquee-container .marquee-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.22), 0 0 0 1.5px rgba(16, 185, 129, 0.4);
+}
+
+.hero-marquee-container .marquee-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+  .hero-marquee-container .marquee-card {
+    width: 270px;
+  }
+}
+
+/* ==========================================================================
    5. SEÇÃO DE CONTEÚDO COMPLETO
    ========================================================================== */
 .content-section {
