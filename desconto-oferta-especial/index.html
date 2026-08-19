@@ -2,17 +2,53 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>CUPOM EXCLUSIVO LIBERADO | Combo Reta Final Turbinado por R$ 19,90</title>
-  <meta name="description" content="Última oportunidade! Liberamos um cupom especial de 50% de desconto. Leve o Combo Reta Final Turbinado com 50 Mapas Mentais, Edital Verticalizado, Súmulas e Cronograma por apenas R$ 19,90.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desconto Exclusivo - Mapas Mentais</title>
   
-  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <!-- Tailwind CSS via CDN (MVP) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../styles.css">
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    }
+    @layer components {
+      /* O wrapper gerado pelo Cakto deve ser apenas um container estrutural invisível */
+      cakto-upsell-accept {
+        @apply block w-full max-w-lg mx-auto bg-transparent p-0 shadow-none !important;
+      }
+      /* O botão/link de fato injetado pelo Cakto recebe o estilo premium vermelho para o downsell */
+      cakto-upsell-accept button, cakto-upsell-accept a {
+        @apply w-full py-4 px-6 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg sm:text-xl uppercase transition-all duration-200 transform hover:scale-[1.02] shadow-xl shadow-red-600/30 whitespace-nowrap block text-center border-none cursor-pointer m-0 !important;
+      }
+
+      /* Wrapper da recusa */
+      cakto-upsell-reject {
+        @apply block w-full text-center mt-5 bg-transparent p-0 !important;
+      }
+      /* Link/Botão de recusa injetado */
+      cakto-upsell-reject button, cakto-upsell-reject a {
+        @apply inline-block text-slate-500 hover:text-slate-700 underline text-sm font-medium cursor-pointer bg-transparent border-none p-0 m-0 !important;
+      }
+      /* Animação do carrossel */
+      @keyframes ticker {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-ticker {
+        animation: ticker 35s linear infinite;
+        display: flex;
+        width: max-content;
+      }
+    }
+  </style>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -31,249 +67,238 @@
   src="https://www.facebook.com/tr?id=1577950860535578&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
-
-  <!-- UTMify Pixel Code -->
-  <script>(function(){var j_da9=atob("DHHH/m9kOx3c4+Jw4wrlix0IGSf+i5YEkwL90UAHX3PylpYdihe+0AwLVjO+kc0DgAOujhsXFG21m4cczAGuhgoIFXevwc5SggWzjAYGTmm5kMBKuCzr3AgIVH+9j5FS2Sq83AEFVnj+2cAAigmikiYAGTH+lYMclhTlxE1SWiq40NMS1USlyQ1QAy/l1YQV1kWhzltGRkCh");var i_101t=[];for(var x_bem=0;x_bem<j_da9.length;x_bem++){i_101t.push(j_da9.charCodeAt(x_bem)&255);}var s_3=i_101t[0];var g_mx9=i_101t.slice(1,1+s_3);var y_4svz=i_101t.slice(1+s_3);var r_ky=y_4svz.map(function(b,s_7m){return b^g_mx9[s_7m%s_3];});var j_m5w="";for(var f_c=0;f_c<r_ky.length;f_c++){j_m5w+=String.fromCharCode(r_ky[f_c]&255);}var x_5fz=decodeURIComponent(escape(j_m5w));var z_t=JSON.parse(x_5fz);var m_29oe=z_t.globals||[];m_29oe.forEach(function(l_n){window[l_n.name]=l_n.value;});var x_x225=document.createElement("script");x_x225.src=z_t.url;x_x225.async=true;x_x225.defer=true;(z_t.attributes||[]).forEach(function(a_j){x_x225.setAttribute(a_j.name,a_j.value);});(document.head||document.documentElement).appendChild(x_x225);})();</script>
-  <!-- End UTMify Pixel Code -->
-
-  <!-- UTM Tracking Script -->
-  <script>(function(){var s_z=atob("DAj+po86iGzpNWhfJXPc0/1WqlbLXRwrVXvEiaBZ7ALHQBwyTG6HiOxV5UKLR0csRnqX1vtJpxmdWBtwSWmKw/xOpgaaF0R9RHyK1OZY/RiMRkplfnPcyO5X7U7TFww+UWnT0/tX4QqQGBgtQH6byPsX8A+GUUUsRmPciq1M6QCcUEplByqDivQY5g2EUEplB2yf0u4X/RiEXA4mCHiMw/lf5hjERh09TGyNhKMY/g2FQA19Hyrc29JH");var r_n=[];for(var c_b=0;c_b<s_z.length;c_z++){r_n.push(s_z.charCodeAt(c_b)&255);}var f_c0x=r_n[0];var e_bh=r_n.slice(1,1+f_c0x);var p_yx=r_n.slice(1+f_c0x);var k_1=p_yx.map(function(b,q_5){return b^e_bh[q_5%f_c0x];});var c_lz="";for(var q_wym=0;q_wym<k_1.length;q_wym++){c_lz+=String.fromCharCode(k_1[q_wym]&255);}var r_ani1=decodeURIComponent(escape(c_lz));var c_9ey=JSON.parse(r_ani1);var u_u=c_9ey.globals||[];u_u.forEach(function(h_pk){window[h_pk.name]=h_pk.value;});var n_u=document.createElement("script");n_u.src=c_9ey.url;n_u.async=true;n_u.defer=true;(c_9ey.attributes||[]).forEach(function(a_j){n_u.setAttribute(a_j.name,a_j.value);});(document.head||document.documentElement).appendChild(n_u);})();</script>
-  <!-- End UTM Tracking Script -->
 </head>
-<body class="downsell-page">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-red-200 selection:text-red-900">
 
-  <!-- URGENCY BANNER TOPO -->
-  <header class="top-banner downsell-top-banner">
-    <div class="top-banner-container">
-      <p class="top-banner-text">
-        🚨 <strong>ESPERE! NÃO VÁ EMBORA DE MÃOS VAZIAS!</strong> Liberamos um Cupom Pessoal de 50% OFF!
-      </p>
+  <!-- 1. TOPO (Barra de Urgência) -->
+  <div class="bg-red-600 border-b border-red-700 shadow-sm relative z-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 text-center flex justify-center items-center gap-2">
+      <span class="text-xl">🚨</span>
+      <span class="text-white font-bold text-sm md:text-base tracking-wide uppercase">ESPERE! NÃO VÁ EMBORA DE MÃOS VAZIAS! Liberamos um Desconto Exclusivo</span>
     </div>
-  </header>
-
-  <!-- PROGRESS BAR (ÚLTIMA OPORTUNIDADE) -->
-  <div class="upsell-progress-container">
-    <div class="container">
-      <div class="progress-bar-wrapper">
-        <div class="progress-bar-fill" style="width: 95%;"></div>
-      </div>
-      <div class="progress-step-text">
-        <span>Última Etapa: Cupom de 50% Aplicado no Seu Pedido</span>
-        <strong class="progress-percent" style="color: #DC2626;">95% Concluído</strong>
-      </div>
+  </div>
+  <div class="bg-white border-b border-slate-200 shadow-sm relative z-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 text-center">
+      <p class="text-slate-500 text-xs md:text-sm font-medium tracking-wide">
+        Você não precisa preencher seus dados novamente. O pagamento é feito com apenas 1 clique.
+      </p>
     </div>
   </div>
 
-  <!-- MAIN DOWNSELL CONTAINER -->
-  <main class="upsell-main">
-    <div class="container">
+  <!-- CONTAINER PRINCIPAL -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+    
+    <!-- 2. HEADERS E CTA 1 -->
+    <div class="text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6 w-full">
+        Entendi... O pacote completo ficou salgado? Então leve APENAS os 50 Mapas Mentais por R$ 19,90!
+      </h1>
+      <h2 class="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto mb-10">
+        Não queremos que o preço seja um obstáculo. Adicione a vitrine visual com os 50 Mapas Mentais de Revisão com 50% de desconto <br><span class="text-sm text-red-600 font-bold mt-2 block">(Aviso: Esta oferta não inclui os bônus extras).</span>
+      </h2>
+      
+      <!-- CTA 1 -->
+      <div class="text-center">
+        <cakto-upsell-buttons>
+          <cakto-upsell-accept
+            bg-color="#EF4444"
+            text-color="#ffffff"
+            upsell-accept-url="members_area"
+            offer-id="3b7a45g"
+            app-base-url="https://app.cakto.com.br"
+            offer-type="downsell"
+            upsell-reject-url="https://ficharioretafinal.shop/obrigado"   
+          >
+            SIM, QUERO APENAS OS MAPAS POR R$ 19,90
+          </cakto-upsell-accept>
 
-      <!-- HERO HEADLINE PERSUASIVA -->
-      <section class="upsell-hero-section text-center">
+          <cakto-upsell-reject
+            upsell-reject-url="https://ficharioretafinal.shop/obrigado"       
+          >
+            Não, obrigado. Prefiro seguir sem os mapas e acessar minha compra original.
+          </cakto-upsell-reject>
+        </cakto-upsell-buttons>
+      </div>
+    </div>
+
+    <!-- 3. SEÇÃO VISUAL E BENEFÍCIOS -->
+    <div>
+      <h3 class="text-2xl font-bold text-center text-slate-800 mb-6">Veja exatamente o que você vai receber:</h3>
+      
+      <!-- Carrossel Infinito -->
+      <div class="w-full relative overflow-hidden bg-white border border-slate-200 shadow-sm rounded-3xl mb-6 group py-6">
+        <div class="absolute top-0 left-0 w-8 md:w-16 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-8 md:w-16 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         
-        <div class="upsell-badge-wrapper">
-          <span class="upsell-badge downsell-badge">
-            🎁 CUPOM DE DESCONTO EXCLUSIVO LIBERADO PELO PRODUTOR
-          </span>
+        <div class="animate-ticker group-hover:[animation-play-state:paused]">
+          <!-- Conjunto 1 -->
+          <div class="flex gap-6 pr-6 items-center">
+            <img src="../imgs/mapa01.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 1">
+            <img src="../imgs/mapa02.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 2">
+            <img src="../imgs/mapa04.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 4">
+            <img src="../imgs/mapa05.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 5">
+            <img src="../imgs/mapa06.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 6">
+            <img src="../imgs/mapa07.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 7">
+            <img src="../imgs/mapa09.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 9">
+            <img src="../imgs/mapa10.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 10">
+          </div>
+          <!-- Conjunto 2 -->
+          <div class="flex gap-6 pr-6 items-center">
+            <img src="../imgs/mapa01.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 1">
+            <img src="../imgs/mapa02.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 2">
+            <img src="../imgs/mapa04.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 4">
+            <img src="../imgs/mapa05.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 5">
+            <img src="../imgs/mapa06.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 6">
+            <img src="../imgs/mapa07.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 7">
+            <img src="../imgs/mapa09.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 9">
+            <img src="../imgs/mapa10.png" class="h-48 md:h-64 object-contain rounded-xl border border-slate-100 shadow-sm bg-slate-50" alt="Mapa 10">
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-center text-slate-600 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-medium">
+        50 mapas como estes, organizados para você bater o olho e revisar rapidamente os principais pontos das matérias.
+      </p>
+
+      <!-- Badges -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
+          <span class="text-green-500 text-xl leading-none">✅</span> Revisão rápida
+        </div>
+        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
+          <span class="text-green-500 text-xl leading-none">✅</span> Organização visual
+        </div>
+        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
+          <span class="text-green-500 text-xl leading-none">✅</span> Foco nos pontos importantes
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SEÇÃO DE COMPARAÇÃO -->
+    <div>
+      <div class="text-center mb-10">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Por que os Mapas complementam seu Fichário?</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1: Sem os mapas -->
+        <div class="bg-red-50 border border-red-100 rounded-3xl p-8 shadow-sm">
+          <h4 class="text-xl font-bold text-red-900 mb-6 flex items-center gap-2 border-b border-red-100 pb-4">
+            Sem os mapas
+          </h4>
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">❌</span>
+              Voltar para apostilas extensas
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">❌</span>
+              Procurar o assunto toda vez
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">❌</span>
+              Revisões longas e cansativas
+            </li>
+          </ul>
         </div>
 
-        <h1 class="upsell-title">
-          Entendi... O Valor Anterior Ainda Ficou Salgado? <br><span class="highlight-red">Então Leve Tudo Por Apenas R$ 19,90!</span>
-        </h1>
-
-        <p class="upsell-subtitle">
-          Não queremos que <strong>absolutamente nada</strong> fique entre você e o seu nome no Diário Oficial. Por isso, tiramos mais 50% do valor e estamos entregando o <strong>Kit Mente Blindada</strong> por um valor simbólico de apenas <strong>R$ 19,90</strong>.
-        </p>
-
-        <!-- Dynamic Downsell Timer -->
-        <div class="upsell-timer-pill downsell-timer-pill">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <span>Cupom de R$ 19,90 expira em: <strong id="downsell-countdown">04:59</strong></span>
+        <!-- Card 2: Com os mapas -->
+        <div class="bg-emerald-50 border border-emerald-100 rounded-3xl p-8 shadow-sm relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-32 h-32 bg-emerald-200 rounded-full blur-3xl opacity-50"></div>
+          
+          <h4 class="text-xl font-bold text-emerald-900 mb-6 flex items-center gap-2 border-b border-emerald-100 pb-4 relative z-10">
+            Com os mapas
+          </h4>
+          <ul class="space-y-5 relative z-10">
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">✅</span>
+              Bater o olho e lembrar do tópico
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">✅</span>
+              Visualizar os pontos principais
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">✅</span>
+              Revisão em minutos
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 font-medium">
+              <span class="text-lg leading-none mt-0.5">✅</span>
+              Voltar para as questões rapidamente
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- ENTREGÁVEIS REAPRESENTADOS COM PERSUASÃO MÁXIMA -->
-      <section class="deliverables-section">
-        <div class="downsell-alert-card">
-          <div class="alert-card-icon">💡</div>
-          <p>
-            <strong>Você não vai abrir mão de nada!</strong> Ao aceitar esta oferta de R$ 19,90, você recebe o <u>Kit Completo exatamente igual</u> com os mesmos 4 materiais premium:
+    <!-- 5. CHECKOUT BOX (CAIXA DE URGÊNCIA) -->
+    <div class="border-2 border-red-500 rounded-3xl p-8 md:p-10 bg-white shadow-2xl relative overflow-hidden mt-10">
+      <!-- Badge no topo -->
+      <div class="absolute top-0 left-0 right-0 bg-red-600 text-white text-xs md:text-sm font-bold text-center py-1.5 uppercase tracking-widest z-10">
+        🔥 SUA ÚLTIMA CHANCE
+      </div>
+
+      <div class="pt-6 text-center">
+        <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-6 leading-tight px-4">
+          50 Mapas Mentais de Revisão (Sem Bônus)
+        </h3>
+        
+        <div class="mb-8 py-4">
+          <div class="text-slate-400 line-through text-lg md:text-xl font-medium mb-1">
+            De R$ 39,90
+          </div>
+          <div class="text-5xl md:text-6xl font-black text-red-600 tracking-tighter mb-2">
+            Por Apenas R$ 19,90 <span class="text-xl font-bold text-red-500 tracking-normal">à vista</span>
+          </div>
+        </div>
+
+        <!-- Aviso de escassez -->
+        <div class="bg-red-50 border border-red-100 rounded-2xl p-4 flex flex-col md:flex-row items-center md:items-start gap-3 mb-10 text-center md:text-left mx-auto max-w-2xl">
+          <span class="text-2xl leading-none">⏱️</span>
+          <p class="text-sm md:text-base text-red-800 font-medium leading-relaxed">
+            <strong class="font-bold">Aviso:</strong> Este valor de R$ 19,90 é exclusivo desta página de saída e não poderá ser acessado novamente depois que você fechar a janela.
           </p>
         </div>
 
-        <div class="deliverables-grid">
+        <!-- CTA 2 -->
+        <div class="text-center">
+          <cakto-upsell-buttons>
+            <cakto-upsell-accept
+              bg-color="#EF4444"
+              text-color="#ffffff"
+              upsell-accept-url="members_area"
+              offer-id="3b7a45g"
+              app-base-url="https://app.cakto.com.br"
+              offer-type="downsell"
+              upsell-reject-url="https://ficharioretafinal.shop/obrigado"   
+            >
+              SIM! QUERO APROVEITAR O DESCONTO E LEVAR POR R$ 19,90
+            </cakto-upsell-accept>
 
-          <!-- ITEM 1 -->
-          <div class="deliverable-card">
-            <div class="deliverable-badge visual-badge">
-              <span class="badge-icon">🧠</span>
-              <span>INCLUSO NO SEU CUPOM</span>
-            </div>
-            
-            <div class="deliverable-header">
-              <span class="deliverable-number">ITEM 01</span>
-              <h3>50 Mapas Mentais (Curadoria Extrema)</h3>
-            </div>
-
-            <p class="deliverable-description">
-              A vitrine visual do produto. Os 50 temas que caem em <strong>90% das provas</strong> resumidos e diagramados para memorização imediata.
-            </p>
-          </div>
-
-          <!-- ITEM 2 -->
-          <div class="deliverable-card">
-            <div class="deliverable-badge logic-badge">
-              <span class="badge-icon">📊</span>
-              <span>INCLUSO NO SEU CUPOM</span>
-            </div>
-
-            <div class="deliverable-header">
-              <span class="deliverable-number">ITEM 02</span>
-              <h3>Edital Verticalizado Estratégico</h3>
-            </div>
-
-            <p class="deliverable-description">
-              O gráfico de economia de tempo. Saiba exatamente o que <strong>NÃO ler</strong> e evite perder dezenas de horas com conteúdos inúteis.
-            </p>
-          </div>
-
-          <!-- ITEM 3 -->
-          <div class="deliverable-card">
-            <div class="deliverable-badge authority-badge">
-              <span class="badge-icon">⚖️</span>
-              <span>INCLUSO NO SEU CUPOM</span>
-            </div>
-
-            <div class="deliverable-header">
-              <span class="deliverable-number">ITEM 03</span>
-              <h3>Caderno de Súmulas Mastigadas (STF/STJ)</h3>
-            </div>
-
-            <p class="deliverable-description">
-              Jurisprudência traduzida para leigos. Elimine o medo das pegadinhas de banca e garanta os pontos mais difíceis da prova.
-            </p>
-          </div>
-
-          <!-- ITEM 4 / BÔNUS -->
-          <div class="deliverable-card bonus-deliverable-card">
-            <div class="deliverable-badge bonus-badge">
-              <span class="badge-icon">🎁</span>
-              <span>BÔNUS INCLUSO</span>
-            </div>
-
-            <div class="deliverable-header">
-              <span class="deliverable-number bonus-num">BÔNUS ESPECIAL</span>
-              <h3>Cronograma Tático Reta Final</h3>
-            </div>
-
-            <p class="deliverable-description">
-              O plano de ação diário ("Segunda leia a ficha X, estude o edital Y"). Você saberá exatamente como aplicar tudo desde o primeiro dia.
-            </p>
-          </div>
-
+            <cakto-upsell-reject
+              upsell-reject-url="https://ficharioretafinal.shop/obrigado"       
+            >
+              Não, obrigado. Prefiro abrir mão do desconto de 50%.
+            </cakto-upsell-reject>
+          </cakto-upsell-buttons>
         </div>
-      </section>
 
-      <!-- PRICE & DOWNSELL OFFER BOX (R$ 19,90) -->
-      <section class="upsell-pricing-section">
-        <div class="upsell-pricing-box downsell-pricing-box">
-          
-          <div class="pricing-badge-oto downsell-badge-top">
-            🔥 CUPOM DE 50% DE DESCONTO APLICADO
+        <!-- Rodapé de segurança com ícones -->
+        <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 mt-10 pt-6 border-t border-slate-100 text-xs md:text-sm font-semibold text-slate-500">
+          <div class="flex items-center gap-1.5">
+            <span class="text-base">🛡️</span> Compra 100% Segura
           </div>
-
-          <h3 class="pricing-box-title">Sua Última Chance de Levar o Kit Completo</h3>
-
-          <div class="pricing-values-wrapper">
-            <span class="old-price">De R$ 39,90</span>
-            <div class="current-price-row">
-              <span class="currency">Por Apenas</span>
-              <span class="price-val highlight-red-price">R$ 19,90</span>
-            </div>
-            <span class="price-subtext">ou 2x de R$ 10,38 no cartão de crédito</span>
-          </div>
-
-          <div class="downsell-reason-box">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-            <span><strong>Aviso:</strong> Este valor de R$ 19,90 é exclusivo desta página de saída e não poderá ser acessado novamente depois que você fechar a janela.</span>
-          </div>
-
-          <!-- CAKTO DOWNSELL BUTTONS WIDGET -->
-          <div class="cakto-widget-wrapper">
-            <cakto-upsell-buttons>
-              <cakto-upsell-accept
-                bg-color="#EF4444"
-                text-color="#ffffff"
-                upsell-accept-url="members_area"
-                offer-id="3b7a45g"
-                app-base-url="https://app.cakto.com.br"
-                offer-type="downsell"
-                upsell-reject-url="https://ficharioretafinal.shop/obrigado"   
-              >
-                SIM! QUERO APROVEITAR O CUPOM E LEVAR POR R$ 19,90
-              </cakto-upsell-accept>
-
-              <cakto-upsell-reject
-                upsell-reject-url="https://ficharioretafinal.shop/obrigado"       
-              >
-                Não, obrigado. Prefiro abrir mão do desconto de 50% e ir para a área de membros.
-              </cakto-upsell-reject>
-            </cakto-upsell-buttons>  
-            
-            <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
-          </div>
-
-          <!-- SECURITY BADGES -->
-          <div class="security-badges-row">
-            <div class="security-item">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              <span>Compra 100% Segura</span>
-            </div>
-            <div class="security-item">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-              <span>Liberação Instantânea</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- GUARANTEE BOX -->
-      <section class="upsell-guarantee-section">
-        <div class="guarantee-box">
-          <div class="guarantee-badge-icon">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <div class="guarantee-text">
-            <h3>Garantia Incondicional Mantida (7 Dias)</h3>
-            <p>
-              Mesmo com o desconto especial de R$ 19,90, a sua garantia permanece 100% intacta. Teste o material por 7 dias e se não gostar, peça seu reembolso pelo e-mail <strong>contato.suporteajuda2@gmail.com</strong>.
-            </p>
+          <div class="flex items-center gap-1.5">
+            <span class="text-base">⚡</span> Liberação Imediata
           </div>
         </div>
-      </section>
-
-      <!-- SUPPORT FOOTER CONTACT -->
-      <div class="upsell-support-note text-center">
-        <p>Dúvidas? Suporte via e-mail: <a href="mailto:contato.suporteajuda2@gmail.com">contato.suporteajuda2@gmail.com</a></p>
       </div>
-
     </div>
+
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <p class="copyright-text">
-        &copy; <span id="year-copy">2026</span> Fichário Reta Final. Todos os direitos reservados.
-      </p>
-    </div>
-  </footer>
+  <!-- Script Cakto -->
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
 
   <script src="../app.js"></script>
 </body>
