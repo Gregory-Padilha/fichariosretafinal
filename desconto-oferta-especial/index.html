@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desconto Exclusivo - Mapas Mentais</title>
+  <title>Opção Enxuta - Mapas Mentais</title>
   
   <!-- Tailwind CSS via CDN (MVP) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,9 +24,9 @@
       cakto-upsell-accept {
         @apply block w-full max-w-lg mx-auto bg-transparent p-0 shadow-none !important;
       }
-      /* O botão/link de fato injetado pelo Cakto recebe o estilo premium vermelho para o downsell */
+      /* O botão/link de fato injetado pelo Cakto recebe o estilo premium VERDE novamente */
       cakto-upsell-accept button, cakto-upsell-accept a {
-        @apply w-full py-4 px-6 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-lg sm:text-xl uppercase transition-all duration-200 transform hover:scale-[1.02] shadow-xl shadow-red-600/30 whitespace-nowrap block text-center border-none cursor-pointer m-0 !important;
+        @apply w-full py-4 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white font-bold text-lg sm:text-xl uppercase transition-all duration-200 transform hover:scale-[1.02] shadow-xl shadow-green-600/20 whitespace-nowrap block text-center border-none cursor-pointer m-0 !important;
       }
 
       /* Wrapper da recusa */
@@ -68,13 +68,12 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-red-200 selection:text-red-900">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-200 selection:text-emerald-900">
 
   <!-- 1. TOPO (Barra de Urgência) -->
-  <div class="bg-red-600 border-b border-red-700 shadow-sm relative z-20">
+  <div class="bg-amber-100 border-b border-amber-200 shadow-sm relative z-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 text-center flex justify-center items-center gap-2">
-      <span class="text-xl">🚨</span>
-      <span class="text-white font-bold text-sm md:text-base tracking-wide uppercase">ESPERE! NÃO VÁ EMBORA DE MÃOS VAZIAS! Liberamos um Desconto Exclusivo</span>
+      <span class="text-amber-600 font-bold text-sm md:text-base tracking-wide">Antes de acessar seu Fichário, liberamos uma opção mais simples.</span>
     </div>
   </div>
   <div class="bg-white border-b border-slate-200 shadow-sm relative z-10">
@@ -91,17 +90,17 @@
     <!-- 2. HEADERS E CTA 1 -->
     <div class="text-center">
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6 w-full">
-        Entendi... O pacote completo ficou salgado? Então leve APENAS os 50 Mapas Mentais por R$ 19,90!
+        Ainda Quer os Mapas? Leve Somente os 50 Mapas Mentais por R$ 19,90
       </h1>
       <h2 class="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto mb-10">
-        Não queremos que o preço seja um obstáculo. Adicione a vitrine visual com os 50 Mapas Mentais de Revisão com 50% de desconto <br><span class="text-sm text-red-600 font-bold mt-2 block">(Aviso: Esta oferta não inclui os bônus extras).</span>
+        Sem o Cronograma de 30 Dias e sem o Mapa de Prioridades do Edital. Você fica apenas com os 50 Mapas Mentais para complementar sua revisão.
       </h2>
       
       <!-- CTA 1 -->
       <div class="text-center">
         <cakto-upsell-buttons>
           <cakto-upsell-accept
-            bg-color="#EF4444"
+            bg-color="#16a34a"
             text-color="#ffffff"
             upsell-accept-url="members_area"
             offer-id="3b7a45g"
@@ -109,19 +108,19 @@
             offer-type="downsell"
             upsell-reject-url="https://ficharioretafinal.shop/obrigado"   
           >
-            SIM, QUERO APENAS OS MAPAS POR R$ 19,90
+            SIM, QUERO SOMENTE OS 50 MAPAS POR R$ 19,90
           </cakto-upsell-accept>
 
           <cakto-upsell-reject
             upsell-reject-url="https://ficharioretafinal.shop/obrigado"       
           >
-            Não, obrigado. Prefiro seguir sem os mapas e acessar minha compra original.
+            Não, obrigado. Quero continuar apenas com meu Fichário.
           </cakto-upsell-reject>
         </cakto-upsell-buttons>
       </div>
     </div>
 
-    <!-- 3. SEÇÃO VISUAL E BENEFÍCIOS -->
+    <!-- 3. SEÇÃO VISUAL -->
     <div>
       <h3 class="text-2xl font-bold text-center text-slate-800 mb-6">Veja exatamente o que você vai receber:</h3>
       
@@ -156,20 +155,38 @@
         </div>
       </div>
       
-      <p class="text-center text-slate-600 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-medium">
-        50 mapas como estes, organizados para você bater o olho e revisar rapidamente os principais pontos das matérias.
-      </p>
-
-      <!-- Badges -->
-      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
-          <span class="text-green-500 text-xl leading-none">✅</span> Revisão rápida
+      <!-- INCLUSO / NÃO INCLUSO -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
+        <!-- O que recebe -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+          <h4 class="font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Nesta opção você recebe:</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2 text-slate-600 font-medium">
+              <span class="text-green-500">✅</span> 50 Mapas Mentais
+            </li>
+            <li class="flex items-center gap-2 text-slate-600 font-medium">
+              <span class="text-green-500">✅</span> PDF para download
+            </li>
+            <li class="flex items-center gap-2 text-slate-600 font-medium">
+              <span class="text-green-500">✅</span> Acesso imediato
+            </li>
+            <li class="flex items-center gap-2 text-slate-600 font-medium">
+              <span class="text-green-500">✅</span> Garantia de 7 dias
+            </li>
+          </ul>
         </div>
-        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
-          <span class="text-green-500 text-xl leading-none">✅</span> Organização visual
-        </div>
-        <div class="flex items-center gap-2 bg-white px-5 py-3 rounded-full border border-slate-200 shadow-sm font-semibold text-slate-700 text-sm w-full md:w-auto justify-center transition hover:shadow-md hover:border-slate-300">
-          <span class="text-green-500 text-xl leading-none">✅</span> Foco nos pontos importantes
+        
+        <!-- O que NÃO recebe -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm opacity-90">
+          <h4 class="font-bold text-slate-500 mb-4 border-b border-slate-200 pb-2">Não inclui:</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2 text-slate-500 font-medium">
+              <span class="text-red-400 mt-0.5">❌</span> Mapa de Prioridades do Edital
+            </li>
+            <li class="flex items-start gap-2 text-slate-500 font-medium">
+              <span class="text-red-400 mt-0.5">❌</span> Cronograma de Revisão de 30 Dias
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -182,22 +199,22 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Card 1: Sem os mapas -->
-        <div class="bg-red-50 border border-red-100 rounded-3xl p-8 shadow-sm">
-          <h4 class="text-xl font-bold text-red-900 mb-6 flex items-center gap-2 border-b border-red-100 pb-4">
+        <div class="bg-slate-100 border border-slate-200 rounded-3xl p-8 shadow-sm">
+          <h4 class="text-xl font-bold text-slate-600 mb-6 flex items-center gap-2 border-b border-slate-200 pb-4">
             Sem os mapas
           </h4>
           <ul class="space-y-5">
-            <li class="flex items-start gap-3 text-slate-700 font-medium">
-              <span class="text-lg leading-none mt-0.5">❌</span>
-              Voltar para apostilas extensas
+            <li class="flex items-start gap-3 text-slate-600 font-medium">
+              <span class="text-lg leading-none mt-0.5 opacity-60">❌</span>
+              Procurar o tópico novamente em materiais maiores
             </li>
-            <li class="flex items-start gap-3 text-slate-700 font-medium">
-              <span class="text-lg leading-none mt-0.5">❌</span>
-              Procurar o assunto toda vez
+            <li class="flex items-start gap-3 text-slate-600 font-medium">
+              <span class="text-lg leading-none mt-0.5 opacity-60">❌</span>
+              Gastar mais tempo localizando a informação
             </li>
-            <li class="flex items-start gap-3 text-slate-700 font-medium">
-              <span class="text-lg leading-none mt-0.5">❌</span>
-              Revisões longas e cansativas
+            <li class="flex items-start gap-3 text-slate-600 font-medium">
+              <span class="text-lg leading-none mt-0.5 opacity-60">❌</span>
+              Revisões menos visuais
             </li>
           </ul>
         </div>
@@ -231,32 +248,24 @@
       </div>
     </div>
 
-    <!-- 5. CHECKOUT BOX (CAIXA DE URGÊNCIA) -->
-    <div class="border-2 border-red-500 rounded-3xl p-8 md:p-10 bg-white shadow-2xl relative overflow-hidden mt-10">
-      <!-- Badge no topo -->
-      <div class="absolute top-0 left-0 right-0 bg-red-600 text-white text-xs md:text-sm font-bold text-center py-1.5 uppercase tracking-widest z-10">
-        🔥 SUA ÚLTIMA CHANCE
-      </div>
-
-      <div class="pt-6 text-center">
-        <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-6 leading-tight px-4">
-          50 Mapas Mentais de Revisão (Sem Bônus)
+    <!-- 5. CHECKOUT BOX -->
+    <div class="border-2 border-slate-200 rounded-3xl p-8 md:p-10 bg-white shadow-2xl relative overflow-hidden mt-10">
+      <div class="pt-2 text-center">
+        <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-4 leading-tight px-4">
+          50 Mapas Mentais de Revisão <span class="text-slate-400 block text-lg font-bold mt-1">(Versão Enxuta)</span>
         </h3>
         
         <div class="mb-8 py-4">
-          <div class="text-slate-400 line-through text-lg md:text-xl font-medium mb-1">
-            De R$ 39,90
-          </div>
-          <div class="text-5xl md:text-6xl font-black text-red-600 tracking-tighter mb-2">
-            Por Apenas R$ 19,90 <span class="text-xl font-bold text-red-500 tracking-normal">à vista</span>
+          <div class="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-2">
+            R$ 19,90 <span class="text-xl font-bold text-slate-500 tracking-normal">à vista</span>
           </div>
         </div>
 
-        <!-- Aviso de escassez -->
+        <!-- Aviso em destaque (vermelho) -->
         <div class="bg-red-50 border border-red-100 rounded-2xl p-4 flex flex-col md:flex-row items-center md:items-start gap-3 mb-10 text-center md:text-left mx-auto max-w-2xl">
-          <span class="text-2xl leading-none">⏱️</span>
+          <span class="text-2xl leading-none">⚠️</span>
           <p class="text-sm md:text-base text-red-800 font-medium leading-relaxed">
-            <strong class="font-bold">Aviso:</strong> Este valor de R$ 19,90 é exclusivo desta página de saída e não poderá ser acessado novamente depois que você fechar a janela.
+            <strong class="font-bold">Aviso:</strong> Esta condição de R$ 19,90 está disponível somente nesta etapa do pedido.
           </p>
         </div>
 
@@ -264,7 +273,7 @@
         <div class="text-center">
           <cakto-upsell-buttons>
             <cakto-upsell-accept
-              bg-color="#EF4444"
+              bg-color="#16a34a"
               text-color="#ffffff"
               upsell-accept-url="members_area"
               offer-id="3b7a45g"
@@ -272,13 +281,13 @@
               offer-type="downsell"
               upsell-reject-url="https://ficharioretafinal.shop/obrigado"   
             >
-              SIM! QUERO APROVEITAR O DESCONTO E LEVAR POR R$ 19,90
+              SIM, QUERO SOMENTE OS 50 MAPAS POR R$ 19,90
             </cakto-upsell-accept>
 
             <cakto-upsell-reject
               upsell-reject-url="https://ficharioretafinal.shop/obrigado"       
             >
-              Não, obrigado. Prefiro abrir mão do desconto de 50%.
+              Não, obrigado. Quero continuar apenas com meu Fichário.
             </cakto-upsell-reject>
           </cakto-upsell-buttons>
         </div>
